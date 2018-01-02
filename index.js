@@ -1,6 +1,6 @@
 'use strict';
 
-import React, { Component, PropTypes } from 'react';
+import React, { Component } from 'react';
 import {
   View,
   WebView,
@@ -15,15 +15,6 @@ import injectedErrorHandler from './injectedJavaScript/errorHandler';
 import injectedExecuteNativeFunction from './injectedJavaScript/executeNativeFunction';
 
 class SignaturePad extends Component {
-
-  static propTypes = {
-    onChange: PropTypes.func,
-    onError: PropTypes.func,
-    style: View.propTypes.style,
-    penColor: PropTypes.string,
-    dataURL: PropTypes.string,
-  };
-
   static defaultProps = {
     onChange: () => {
     },
